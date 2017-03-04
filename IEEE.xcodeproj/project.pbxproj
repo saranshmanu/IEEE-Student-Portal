@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C58C61DF02D2BD53EB0BDD6 /* Pods_IEEE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD50AA13A136DD4A582988AB /* Pods_IEEE.framework */; };
+		953D98DB1E65759D005F0854 /* CalenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D98DA1E65759D005F0854 /* CalenderTableViewCell.swift */; };
+		9554744F1E66A771001C4283 /* profile_details.png in Resources */ = {isa = PBXBuildFile; fileRef = 9554744D1E66A771001C4283 /* profile_details.png */; };
+		9582EFF51E54DE5100533562 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9582EFF41E54DE5100533562 /* Images.xcassets */; };
+		95EE422F1E54DD180050DC58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE41D31E54DD180050DC58 /* AppDelegate.swift */; };
+		95EE42601E54DD180050DC58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95EE42181E54DD180050DC58 /* LaunchScreen.storyboard */; };
+		95EE42611E54DD180050DC58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95EE42191E54DD180050DC58 /* Main.storyboard */; };
+		95EE42621E54DD180050DC58 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE421B1E54DD180050DC58 /* CalenderViewController.swift */; };
+		95EE42631E54DD180050DC58 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE421C1E54DD180050DC58 /* CellView.swift */; };
+		95EE42641E54DD180050DC58 /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95EE421D1E54DD180050DC58 /* CellView.xib */; };
+		95EE42651E54DD180050DC58 /* CompletedWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE421E1E54DD180050DC58 /* CompletedWorkViewController.swift */; };
+		95EE42661E54DD180050DC58 /* CreateWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE421F1E54DD180050DC58 /* CreateWorkViewController.swift */; };
+		95EE42671E54DD180050DC58 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95EE42201E54DD180050DC58 /* Info.plist */; };
+		95EE42681E54DD180050DC58 /* OtherMemberProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42211E54DD180050DC58 /* OtherMemberProfileViewController.swift */; };
+		95EE42691E54DD180050DC58 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42221E54DD180050DC58 /* ProfileTableViewCell.swift */; };
+		95EE426A1E54DD180050DC58 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42231E54DD180050DC58 /* ProfileViewController.swift */; };
+		95EE426B1E54DD180050DC58 /* ProjectInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42241E54DD180050DC58 /* ProjectInformationTableViewCell.swift */; };
+		95EE426C1E54DD180050DC58 /* ProjectInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42251E54DD180050DC58 /* ProjectInformationViewController.swift */; };
+		95EE426D1E54DD180050DC58 /* ProjectsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42261E54DD180050DC58 /* ProjectsTableViewCell.swift */; };
+		95EE426E1E54DD180050DC58 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42271E54DD180050DC58 /* ProjectsViewController.swift */; };
+		95EE426F1E54DD180050DC58 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42281E54DD180050DC58 /* SettingsViewController.swift */; };
+		95EE42701E54DD180050DC58 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42291E54DD180050DC58 /* SignUpViewController.swift */; };
+		95EE42711E54DD180050DC58 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE422A1E54DD180050DC58 /* UsersTableViewCell.swift */; };
+		95EE42721E54DD180050DC58 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE422B1E54DD180050DC58 /* UsersViewController.swift */; };
+		95EE42731E54DD180050DC58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE422C1E54DD180050DC58 /* ViewController.swift */; };
+		95EE42741E54DD180050DC58 /* WorkProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE422D1E54DD180050DC58 /* WorkProjectTableViewCell.swift */; };
+		95EE42751E54DD180050DC58 /* WorkProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE422E1E54DD180050DC58 /* WorkProjectViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0034537271EE89B91594843A /* Pods-IEEE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IEEE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IEEE/Pods-IEEE.debug.xcconfig"; sourceTree = "<group>"; };
+		818D0D276CDE69E160D73D13 /* Pods-IEEE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IEEE.release.xcconfig"; path = "Pods/Target Support Files/Pods-IEEE/Pods-IEEE.release.xcconfig"; sourceTree = "<group>"; };
+		953D98DA1E65759D005F0854 /* CalenderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalenderTableViewCell.swift; path = IEEE/CalenderTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		9554744E1E66A771001C4283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = profile_details.png; sourceTree = "<group>"; };
+		9582EFF41E54DE5100533562 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		95B2340E1E54DBC200E16FFC /* IEEE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IEEE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95EE41D31E54DD180050DC58 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = IEEE/AppDelegate.swift; sourceTree = "<group>"; };
+		95EE42181E54DD180050DC58 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95EE42191E54DD180050DC58 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		95EE421B1E54DD180050DC58 /* CalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalenderViewController.swift; path = IEEE/CalenderViewController.swift; sourceTree = "<group>"; };
+		95EE421C1E54DD180050DC58 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellView.swift; path = IEEE/CellView.swift; sourceTree = "<group>"; };
+		95EE421D1E54DD180050DC58 /* CellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellView.xib; path = IEEE/CellView.xib; sourceTree = "<group>"; };
+		95EE421E1E54DD180050DC58 /* CompletedWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompletedWorkViewController.swift; path = IEEE/CompletedWorkViewController.swift; sourceTree = "<group>"; };
+		95EE421F1E54DD180050DC58 /* CreateWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateWorkViewController.swift; path = IEEE/CreateWorkViewController.swift; sourceTree = "<group>"; };
+		95EE42201E54DD180050DC58 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = IEEE/Info.plist; sourceTree = "<group>"; };
+		95EE42211E54DD180050DC58 /* OtherMemberProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OtherMemberProfileViewController.swift; path = IEEE/OtherMemberProfileViewController.swift; sourceTree = "<group>"; };
+		95EE42221E54DD180050DC58 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewCell.swift; path = IEEE/ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		95EE42231E54DD180050DC58 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = IEEE/ProfileViewController.swift; sourceTree = "<group>"; };
+		95EE42241E54DD180050DC58 /* ProjectInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectInformationTableViewCell.swift; path = IEEE/ProjectInformationTableViewCell.swift; sourceTree = "<group>"; };
+		95EE42251E54DD180050DC58 /* ProjectInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectInformationViewController.swift; path = IEEE/ProjectInformationViewController.swift; sourceTree = "<group>"; };
+		95EE42261E54DD180050DC58 /* ProjectsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsTableViewCell.swift; path = IEEE/ProjectsTableViewCell.swift; sourceTree = "<group>"; };
+		95EE42271E54DD180050DC58 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = IEEE/ProjectsViewController.swift; sourceTree = "<group>"; };
+		95EE42281E54DD180050DC58 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = IEEE/SettingsViewController.swift; sourceTree = "<group>"; };
+		95EE42291E54DD180050DC58 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = IEEE/SignUpViewController.swift; sourceTree = "<group>"; };
+		95EE422A1E54DD180050DC58 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewCell.swift; path = IEEE/UsersTableViewCell.swift; sourceTree = "<group>"; };
+		95EE422B1E54DD180050DC58 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersViewController.swift; path = IEEE/UsersViewController.swift; sourceTree = "<group>"; };
+		95EE422C1E54DD180050DC58 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = IEEE/ViewController.swift; sourceTree = "<group>"; };
+		95EE422D1E54DD180050DC58 /* WorkProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkProjectTableViewCell.swift; path = IEEE/WorkProjectTableViewCell.swift; sourceTree = "<group>"; };
+		95EE422E1E54DD180050DC58 /* WorkProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkProjectViewController.swift; path = IEEE/WorkProjectViewController.swift; sourceTree = "<group>"; };
+		CD50AA13A136DD4A582988AB /* Pods_IEEE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IEEE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95B2340B1E54DBC200E16FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C58C61DF02D2BD53EB0BDD6 /* Pods_IEEE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BE09F2CC40E3AED5BF590C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0034537271EE89B91594843A /* Pods-IEEE.debug.xcconfig */,
+				818D0D276CDE69E160D73D13 /* Pods-IEEE.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95AB74AD1E65D48F006D4D0A /* sample images */ = {
+			isa = PBXGroup;
+			children = (
+				9554744D1E66A771001C4283 /* profile_details.png */,
+			);
+			path = "sample images";
+			sourceTree = "<group>";
+		};
+		95B234051E54DBC200E16FFC = {
+			isa = PBXGroup;
+			children = (
+				95EE41D31E54DD180050DC58 /* AppDelegate.swift */,
+				95EE421A1E54DD180050DC58 /* Base.lproj */,
+				95EE421B1E54DD180050DC58 /* CalenderViewController.swift */,
+				953D98DA1E65759D005F0854 /* CalenderTableViewCell.swift */,
+				95EE421C1E54DD180050DC58 /* CellView.swift */,
+				95EE421D1E54DD180050DC58 /* CellView.xib */,
+				95EE421E1E54DD180050DC58 /* CompletedWorkViewController.swift */,
+				95EE421F1E54DD180050DC58 /* CreateWorkViewController.swift */,
+				95EE42201E54DD180050DC58 /* Info.plist */,
+				95EE42211E54DD180050DC58 /* OtherMemberProfileViewController.swift */,
+				95EE42221E54DD180050DC58 /* ProfileTableViewCell.swift */,
+				95EE42231E54DD180050DC58 /* ProfileViewController.swift */,
+				95EE42241E54DD180050DC58 /* ProjectInformationTableViewCell.swift */,
+				95EE42251E54DD180050DC58 /* ProjectInformationViewController.swift */,
+				95EE42261E54DD180050DC58 /* ProjectsTableViewCell.swift */,
+				95EE42271E54DD180050DC58 /* ProjectsViewController.swift */,
+				95EE42281E54DD180050DC58 /* SettingsViewController.swift */,
+				95EE42291E54DD180050DC58 /* SignUpViewController.swift */,
+				95EE422A1E54DD180050DC58 /* UsersTableViewCell.swift */,
+				95EE422B1E54DD180050DC58 /* UsersViewController.swift */,
+				95EE422C1E54DD180050DC58 /* ViewController.swift */,
+				95EE422D1E54DD180050DC58 /* WorkProjectTableViewCell.swift */,
+				95EE422E1E54DD180050DC58 /* WorkProjectViewController.swift */,
+				95B234101E54DBC200E16FFC /* IEEE */,
+				95B2340F1E54DBC200E16FFC /* Products */,
+				3BE09F2CC40E3AED5BF590C2 /* Pods */,
+				AF0B065D117CD4BD09DAD1D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95B2340F1E54DBC200E16FFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95B2340E1E54DBC200E16FFC /* IEEE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95B234101E54DBC200E16FFC /* IEEE */ = {
+			isa = PBXGroup;
+			children = (
+				9582EFF41E54DE5100533562 /* Images.xcassets */,
+			);
+			path = IEEE;
+			sourceTree = "<group>";
+		};
+		95EE421A1E54DD180050DC58 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				95EE42181E54DD180050DC58 /* LaunchScreen.storyboard */,
+				95EE42191E54DD180050DC58 /* Main.storyboard */,
+				95AB74AD1E65D48F006D4D0A /* sample images */,
+			);
+			name = Base.lproj;
+			path = IEEE/Base.lproj;
+			sourceTree = "<group>";
+		};
+		AF0B065D117CD4BD09DAD1D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD50AA13A136DD4A582988AB /* Pods_IEEE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95B2340D1E54DBC200E16FFC /* IEEE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95B234201E54DBC200E16FFC /* Build configuration list for PBXNativeTarget "IEEE" */;
+			buildPhases = (
+				2440112CCEA2B4B57AC40C19 /* [CP] Check Pods Manifest.lock */,
+				95B2340A1E54DBC200E16FFC /* Sources */,
+				95B2340B1E54DBC200E16FFC /* Frameworks */,
+				95B2340C1E54DBC200E16FFC /* Resources */,
+				824D8804F11ADDD9773B858F /* [CP] Embed Pods Frameworks */,
+				3349FC14CE29D07B91B70D3D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IEEE;
+			productName = IEEE;
+			productReference = 95B2340E1E54DBC200E16FFC /* IEEE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95B234061E54DBC200E16FFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Saransh Mittal";
+				TargetAttributes = {
+					95B2340D1E54DBC200E16FFC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JCRFV5ZL52;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 95B234091E54DBC200E16FFC /* Build configuration list for PBXProject "IEEE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95B234051E54DBC200E16FFC;
+			productRefGroup = 95B2340F1E54DBC200E16FFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95B2340D1E54DBC200E16FFC /* IEEE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95B2340C1E54DBC200E16FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9554744F1E66A771001C4283 /* profile_details.png in Resources */,
+				95EE42611E54DD180050DC58 /* Main.storyboard in Resources */,
+				95EE42671E54DD180050DC58 /* Info.plist in Resources */,
+				95EE42601E54DD180050DC58 /* LaunchScreen.storyboard in Resources */,
+				9582EFF51E54DE5100533562 /* Images.xcassets in Resources */,
+				95EE42641E54DD180050DC58 /* CellView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2440112CCEA2B4B57AC40C19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3349FC14CE29D07B91B70D3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IEEE/Pods-IEEE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		824D8804F11ADDD9773B858F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IEEE/Pods-IEEE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95B2340A1E54DBC200E16FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95EE426E1E54DD180050DC58 /* ProjectsViewController.swift in Sources */,
+				95EE42621E54DD180050DC58 /* CalenderViewController.swift in Sources */,
+				95EE426D1E54DD180050DC58 /* ProjectsTableViewCell.swift in Sources */,
+				95EE42691E54DD180050DC58 /* ProfileTableViewCell.swift in Sources */,
+				95EE42711E54DD180050DC58 /* UsersTableViewCell.swift in Sources */,
+				95EE42721E54DD180050DC58 /* UsersViewController.swift in Sources */,
+				95EE42651E54DD180050DC58 /* CompletedWorkViewController.swift in Sources */,
+				95EE422F1E54DD180050DC58 /* AppDelegate.swift in Sources */,
+				95EE42741E54DD180050DC58 /* WorkProjectTableViewCell.swift in Sources */,
+				95EE42751E54DD180050DC58 /* WorkProjectViewController.swift in Sources */,
+				95EE42681E54DD180050DC58 /* OtherMemberProfileViewController.swift in Sources */,
+				953D98DB1E65759D005F0854 /* CalenderTableViewCell.swift in Sources */,
+				95EE42731E54DD180050DC58 /* ViewController.swift in Sources */,
+				95EE42661E54DD180050DC58 /* CreateWorkViewController.swift in Sources */,
+				95EE42701E54DD180050DC58 /* SignUpViewController.swift in Sources */,
+				95EE426B1E54DD180050DC58 /* ProjectInformationTableViewCell.swift in Sources */,
+				95EE426A1E54DD180050DC58 /* ProfileViewController.swift in Sources */,
+				95EE426F1E54DD180050DC58 /* SettingsViewController.swift in Sources */,
+				95EE42631E54DD180050DC58 /* CellView.swift in Sources */,
+				95EE426C1E54DD180050DC58 /* ProjectInformationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9554744D1E66A771001C4283 /* profile_details.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9554744E1E66A771001C4283 /* Base */,
+			);
+			name = profile_details.png;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95B2341E1E54DBC200E16FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95B2341F1E54DBC200E16FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95B234211E54DBC200E16FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0034537271EE89B91594843A /* Pods-IEEE.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = JCRFV5ZL52;
+				INFOPLIST_FILE = IEEE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyblue.IEEE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		95B234221E54DBC200E16FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 818D0D276CDE69E160D73D13 /* Pods-IEEE.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = JCRFV5ZL52;
+				INFOPLIST_FILE = IEEE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyblue.IEEE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95B234091E54DBC200E16FFC /* Build configuration list for PBXProject "IEEE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B2341E1E54DBC200E16FFC /* Debug */,
+				95B2341F1E54DBC200E16FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95B234201E54DBC200E16FFC /* Build configuration list for PBXNativeTarget "IEEE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B234211E54DBC200E16FFC /* Debug */,
+				95B234221E54DBC200E16FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95B234061E54DBC200E16FFC /* Project object */;
+}
