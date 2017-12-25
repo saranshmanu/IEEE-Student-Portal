@@ -12,6 +12,7 @@ class CalenderTableViewCell: UITableViewCell {
 
     @IBOutlet weak var EventDescription: UILabel!
     @IBOutlet weak var EventTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

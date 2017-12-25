@@ -12,5 +12,6 @@ pod 'AlamofireImage', '~> 3.1'
 pod 'JTAppleCalendar', '~> 6.0'
 pod 'SwiftDate', '~> 4.0'
 pod 'TwicketSegmentedControl'
+pod 'FoldingCell’, '~> 2.0.3' 
 
 end

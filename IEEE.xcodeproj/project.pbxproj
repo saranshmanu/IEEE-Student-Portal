@@ -9,8 +9,15 @@
 /* Begin PBXBuildFile section */
 		2C58C61DF02D2BD53EB0BDD6 /* Pods_IEEE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD50AA13A136DD4A582988AB /* Pods_IEEE.framework */; };
 		953D98DB1E65759D005F0854 /* CalenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D98DA1E65759D005F0854 /* CalenderTableViewCell.swift */; };
+		95518C171E8579F200EB445A /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95518C161E8579F200EB445A /* iCarousel.m */; };
+		95518C231E85916E00EB445A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95518C221E85916E00EB445A /* CustomTextField.swift */; };
 		9554744F1E66A771001C4283 /* profile_details.png in Resources */ = {isa = PBXBuildFile; fileRef = 9554744D1E66A771001C4283 /* profile_details.png */; };
+		956845071E75B84D009CC2DA /* CreateProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956845061E75B84D009CC2DA /* CreateProjectViewController.swift */; };
+		9575CD991E75028200A48B79 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575CD981E75028200A48B79 /* Reachability.swift */; };
 		9582EFF51E54DE5100533562 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9582EFF41E54DE5100533562 /* Images.xcassets */; };
+		95965F5E1E86DC7B00540E32 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95965F5D1E86DC7B00540E32 /* NewsFeedViewController.swift */; };
+		95B36BF11E8139F000CE16BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B36BF01E8139F000CE16BC /* Constants.swift */; };
+		95C962BE1E6B5BF500F882E2 /* CreateCalenderEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C962BD1E6B5BF500F882E2 /* CreateCalenderEventViewController.swift */; };
 		95EE422F1E54DD180050DC58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE41D31E54DD180050DC58 /* AppDelegate.swift */; };
 		95EE42601E54DD180050DC58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95EE42181E54DD180050DC58 /* LaunchScreen.storyboard */; };
 		95EE42611E54DD180050DC58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95EE42191E54DD180050DC58 /* Main.storyboard */; };
@@ -19,7 +26,6 @@
 		95EE42641E54DD180050DC58 /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95EE421D1E54DD180050DC58 /* CellView.xib */; };
 		95EE42651E54DD180050DC58 /* CompletedWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE421E1E54DD180050DC58 /* CompletedWorkViewController.swift */; };
 		95EE42661E54DD180050DC58 /* CreateWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE421F1E54DD180050DC58 /* CreateWorkViewController.swift */; };
-		95EE42671E54DD180050DC58 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95EE42201E54DD180050DC58 /* Info.plist */; };
 		95EE42681E54DD180050DC58 /* OtherMemberProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42211E54DD180050DC58 /* OtherMemberProfileViewController.swift */; };
 		95EE42691E54DD180050DC58 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42221E54DD180050DC58 /* ProfileTableViewCell.swift */; };
 		95EE426A1E54DD180050DC58 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42231E54DD180050DC58 /* ProfileViewController.swift */; };
@@ -31,7 +37,7 @@
 		95EE42701E54DD180050DC58 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE42291E54DD180050DC58 /* SignUpViewController.swift */; };
 		95EE42711E54DD180050DC58 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE422A1E54DD180050DC58 /* UsersTableViewCell.swift */; };
 		95EE42721E54DD180050DC58 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE422B1E54DD180050DC58 /* UsersViewController.swift */; };
-		95EE42731E54DD180050DC58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE422C1E54DD180050DC58 /* ViewController.swift */; };
+		95EE42731E54DD180050DC58 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE422C1E54DD180050DC58 /* LoginViewController.swift */; };
 		95EE42741E54DD180050DC58 /* WorkProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE422D1E54DD180050DC58 /* WorkProjectTableViewCell.swift */; };
 		95EE42751E54DD180050DC58 /* WorkProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE422E1E54DD180050DC58 /* WorkProjectViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,32 +46,41 @@
 		0034537271EE89B91594843A /* Pods-IEEE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IEEE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IEEE/Pods-IEEE.debug.xcconfig"; sourceTree = "<group>"; };
 		818D0D276CDE69E160D73D13 /* Pods-IEEE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IEEE.release.xcconfig"; path = "Pods/Target Support Files/Pods-IEEE/Pods-IEEE.release.xcconfig"; sourceTree = "<group>"; };
 		953D98DA1E65759D005F0854 /* CalenderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalenderTableViewCell.swift; path = IEEE/CalenderTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		95518C141E8579F100EB445A /* IEEE-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IEEE-Bridging-Header.h"; sourceTree = "<group>"; };
+		95518C151E8579F200EB445A /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		95518C161E8579F200EB445A /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		95518C221E85916E00EB445A /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		9554744E1E66A771001C4283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = profile_details.png; sourceTree = "<group>"; };
+		956845061E75B84D009CC2DA /* CreateProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateProjectViewController.swift; path = IEEE/CreateProjectViewController.swift; sourceTree = SOURCE_ROOT; };
+		9575CD981E75028200A48B79 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		9582EFF41E54DE5100533562 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		95965F5D1E86DC7B00540E32 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
 		95B2340E1E54DBC200E16FFC /* IEEE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IEEE.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		95EE41D31E54DD180050DC58 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = IEEE/AppDelegate.swift; sourceTree = "<group>"; };
-		95EE42181E54DD180050DC58 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		95EE42191E54DD180050DC58 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		95EE421B1E54DD180050DC58 /* CalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalenderViewController.swift; path = IEEE/CalenderViewController.swift; sourceTree = "<group>"; };
-		95EE421C1E54DD180050DC58 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellView.swift; path = IEEE/CellView.swift; sourceTree = "<group>"; };
-		95EE421D1E54DD180050DC58 /* CellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellView.xib; path = IEEE/CellView.xib; sourceTree = "<group>"; };
-		95EE421E1E54DD180050DC58 /* CompletedWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompletedWorkViewController.swift; path = IEEE/CompletedWorkViewController.swift; sourceTree = "<group>"; };
-		95EE421F1E54DD180050DC58 /* CreateWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateWorkViewController.swift; path = IEEE/CreateWorkViewController.swift; sourceTree = "<group>"; };
-		95EE42201E54DD180050DC58 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = IEEE/Info.plist; sourceTree = "<group>"; };
-		95EE42211E54DD180050DC58 /* OtherMemberProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OtherMemberProfileViewController.swift; path = IEEE/OtherMemberProfileViewController.swift; sourceTree = "<group>"; };
-		95EE42221E54DD180050DC58 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewCell.swift; path = IEEE/ProfileTableViewCell.swift; sourceTree = "<group>"; };
-		95EE42231E54DD180050DC58 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = IEEE/ProfileViewController.swift; sourceTree = "<group>"; };
-		95EE42241E54DD180050DC58 /* ProjectInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectInformationTableViewCell.swift; path = IEEE/ProjectInformationTableViewCell.swift; sourceTree = "<group>"; };
-		95EE42251E54DD180050DC58 /* ProjectInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectInformationViewController.swift; path = IEEE/ProjectInformationViewController.swift; sourceTree = "<group>"; };
-		95EE42261E54DD180050DC58 /* ProjectsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsTableViewCell.swift; path = IEEE/ProjectsTableViewCell.swift; sourceTree = "<group>"; };
-		95EE42271E54DD180050DC58 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = IEEE/ProjectsViewController.swift; sourceTree = "<group>"; };
-		95EE42281E54DD180050DC58 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = IEEE/SettingsViewController.swift; sourceTree = "<group>"; };
-		95EE42291E54DD180050DC58 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = IEEE/SignUpViewController.swift; sourceTree = "<group>"; };
-		95EE422A1E54DD180050DC58 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewCell.swift; path = IEEE/UsersTableViewCell.swift; sourceTree = "<group>"; };
-		95EE422B1E54DD180050DC58 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersViewController.swift; path = IEEE/UsersViewController.swift; sourceTree = "<group>"; };
-		95EE422C1E54DD180050DC58 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = IEEE/ViewController.swift; sourceTree = "<group>"; };
-		95EE422D1E54DD180050DC58 /* WorkProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkProjectTableViewCell.swift; path = IEEE/WorkProjectTableViewCell.swift; sourceTree = "<group>"; };
-		95EE422E1E54DD180050DC58 /* WorkProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkProjectViewController.swift; path = IEEE/WorkProjectViewController.swift; sourceTree = "<group>"; };
+		95B36BF01E8139F000CE16BC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		95C962BD1E6B5BF500F882E2 /* CreateCalenderEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateCalenderEventViewController.swift; path = IEEE/CreateCalenderEventViewController.swift; sourceTree = SOURCE_ROOT; };
+		95EE41D31E54DD180050DC58 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95EE42181E54DD180050DC58 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95EE42191E54DD180050DC58 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95EE421B1E54DD180050DC58 /* CalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
+		95EE421C1E54DD180050DC58 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		95EE421D1E54DD180050DC58 /* CellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
+		95EE421E1E54DD180050DC58 /* CompletedWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedWorkViewController.swift; sourceTree = "<group>"; };
+		95EE421F1E54DD180050DC58 /* CreateWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWorkViewController.swift; sourceTree = "<group>"; };
+		95EE42201E54DD180050DC58 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95EE42211E54DD180050DC58 /* OtherMemberProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherMemberProfileViewController.swift; sourceTree = "<group>"; };
+		95EE42221E54DD180050DC58 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		95EE42231E54DD180050DC58 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		95EE42241E54DD180050DC58 /* ProjectInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectInformationTableViewCell.swift; sourceTree = "<group>"; };
+		95EE42251E54DD180050DC58 /* ProjectInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectInformationViewController.swift; sourceTree = "<group>"; };
+		95EE42261E54DD180050DC58 /* ProjectsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewCell.swift; sourceTree = "<group>"; };
+		95EE42271E54DD180050DC58 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		95EE42281E54DD180050DC58 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		95EE42291E54DD180050DC58 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		95EE422A1E54DD180050DC58 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		95EE422B1E54DD180050DC58 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		95EE422C1E54DD180050DC58 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		95EE422D1E54DD180050DC58 /* WorkProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkProjectTableViewCell.swift; sourceTree = "<group>"; };
+		95EE422E1E54DD180050DC58 /* WorkProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkProjectViewController.swift; sourceTree = "<group>"; };
 		CD50AA13A136DD4A582988AB /* Pods_IEEE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IEEE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,40 +105,98 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		95518C1A1E857BBD00EB445A /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				95518C151E8579F200EB445A /* iCarousel.h */,
+				95518C161E8579F200EB445A /* iCarousel.m */,
+				95518C141E8579F100EB445A /* IEEE-Bridging-Header.h */,
+			);
+			name = iCarousel;
+			sourceTree = "<group>";
+		};
+		95518C1B1E857C6E00EB445A /* News */ = {
+			isa = PBXGroup;
+			children = (
+				95965F5D1E86DC7B00540E32 /* NewsFeedViewController.swift */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		95518C1C1E857C7B00EB445A /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				95C962BD1E6B5BF500F882E2 /* CreateCalenderEventViewController.swift */,
+				95EE421B1E54DD180050DC58 /* CalenderViewController.swift */,
+				953D98DA1E65759D005F0854 /* CalenderTableViewCell.swift */,
+				95EE421C1E54DD180050DC58 /* CellView.swift */,
+				95EE421D1E54DD180050DC58 /* CellView.xib */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		95518C1D1E857C8400EB445A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				95EE42221E54DD180050DC58 /* ProfileTableViewCell.swift */,
+				95EE42231E54DD180050DC58 /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		95518C1E1E857C9200EB445A /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				95EE42241E54DD180050DC58 /* ProjectInformationTableViewCell.swift */,
+				95EE42251E54DD180050DC58 /* ProjectInformationViewController.swift */,
+				956845061E75B84D009CC2DA /* CreateProjectViewController.swift */,
+				95EE42261E54DD180050DC58 /* ProjectsTableViewCell.swift */,
+				95EE42271E54DD180050DC58 /* ProjectsViewController.swift */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		95518C1F1E857CB900EB445A /* Work */ = {
+			isa = PBXGroup;
+			children = (
+				95EE421F1E54DD180050DC58 /* CreateWorkViewController.swift */,
+				95EE422D1E54DD180050DC58 /* WorkProjectTableViewCell.swift */,
+				95EE422E1E54DD180050DC58 /* WorkProjectViewController.swift */,
+			);
+			name = Work;
+			sourceTree = "<group>";
+		};
+		95518C201E857CD000EB445A /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				95EE42211E54DD180050DC58 /* OtherMemberProfileViewController.swift */,
+				95EE422B1E54DD180050DC58 /* UsersViewController.swift */,
+				95EE422A1E54DD180050DC58 /* UsersTableViewCell.swift */,
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
+		95518C211E857CE500EB445A /* Login Signup */ = {
+			isa = PBXGroup;
+			children = (
+				95EE42291E54DD180050DC58 /* SignUpViewController.swift */,
+				95EE422C1E54DD180050DC58 /* LoginViewController.swift */,
+			);
+			name = "Login Signup";
+			sourceTree = "<group>";
+		};
 		95AB74AD1E65D48F006D4D0A /* sample images */ = {
 			isa = PBXGroup;
 			children = (
 				9554744D1E66A771001C4283 /* profile_details.png */,
 			);
-			path = "sample images";
+			name = "sample images";
+			path = "Base.lproj/sample images";
 			sourceTree = "<group>";
 		};
 		95B234051E54DBC200E16FFC = {
 			isa = PBXGroup;
 			children = (
-				95EE41D31E54DD180050DC58 /* AppDelegate.swift */,
-				95EE421A1E54DD180050DC58 /* Base.lproj */,
-				95EE421B1E54DD180050DC58 /* CalenderViewController.swift */,
-				953D98DA1E65759D005F0854 /* CalenderTableViewCell.swift */,
-				95EE421C1E54DD180050DC58 /* CellView.swift */,
-				95EE421D1E54DD180050DC58 /* CellView.xib */,
-				95EE421E1E54DD180050DC58 /* CompletedWorkViewController.swift */,
-				95EE421F1E54DD180050DC58 /* CreateWorkViewController.swift */,
-				95EE42201E54DD180050DC58 /* Info.plist */,
-				95EE42211E54DD180050DC58 /* OtherMemberProfileViewController.swift */,
-				95EE42221E54DD180050DC58 /* ProfileTableViewCell.swift */,
-				95EE42231E54DD180050DC58 /* ProfileViewController.swift */,
-				95EE42241E54DD180050DC58 /* ProjectInformationTableViewCell.swift */,
-				95EE42251E54DD180050DC58 /* ProjectInformationViewController.swift */,
-				95EE42261E54DD180050DC58 /* ProjectsTableViewCell.swift */,
-				95EE42271E54DD180050DC58 /* ProjectsViewController.swift */,
-				95EE42281E54DD180050DC58 /* SettingsViewController.swift */,
-				95EE42291E54DD180050DC58 /* SignUpViewController.swift */,
-				95EE422A1E54DD180050DC58 /* UsersTableViewCell.swift */,
-				95EE422B1E54DD180050DC58 /* UsersViewController.swift */,
-				95EE422C1E54DD180050DC58 /* ViewController.swift */,
-				95EE422D1E54DD180050DC58 /* WorkProjectTableViewCell.swift */,
-				95EE422E1E54DD180050DC58 /* WorkProjectViewController.swift */,
 				95B234101E54DBC200E16FFC /* IEEE */,
 				95B2340F1E54DBC200E16FFC /* Products */,
 				3BE09F2CC40E3AED5BF590C2 /* Pods */,
@@ -142,7 +215,26 @@
 		95B234101E54DBC200E16FFC /* IEEE */ = {
 			isa = PBXGroup;
 			children = (
+				95EE41D31E54DD180050DC58 /* AppDelegate.swift */,
+				95518C1B1E857C6E00EB445A /* News */,
+				95518C1C1E857C7B00EB445A /* Calendar */,
+				95518C1A1E857BBD00EB445A /* iCarousel */,
+				95EE421A1E54DD180050DC58 /* Base.lproj */,
+				95EE42181E54DD180050DC58 /* LaunchScreen.storyboard */,
+				95EE42191E54DD180050DC58 /* Main.storyboard */,
+				95AB74AD1E65D48F006D4D0A /* sample images */,
+				95518C1D1E857C8400EB445A /* Profile */,
+				95518C1E1E857C9200EB445A /* Project */,
+				95518C211E857CE500EB445A /* Login Signup */,
+				95518C201E857CD000EB445A /* Users */,
+				95518C1F1E857CB900EB445A /* Work */,
+				95EE42281E54DD180050DC58 /* SettingsViewController.swift */,
+				9575CD981E75028200A48B79 /* Reachability.swift */,
+				95EE421E1E54DD180050DC58 /* CompletedWorkViewController.swift */,
 				9582EFF41E54DE5100533562 /* Images.xcassets */,
+				95EE42201E54DD180050DC58 /* Info.plist */,
+				95B36BF01E8139F000CE16BC /* Constants.swift */,
+				95518C221E85916E00EB445A /* CustomTextField.swift */,
 			);
 			path = IEEE;
 			sourceTree = "<group>";
@@ -150,12 +242,8 @@
 		95EE421A1E54DD180050DC58 /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				95EE42181E54DD180050DC58 /* LaunchScreen.storyboard */,
-				95EE42191E54DD180050DC58 /* Main.storyboard */,
-				95AB74AD1E65D48F006D4D0A /* sample images */,
 			);
-			name = Base.lproj;
-			path = IEEE/Base.lproj;
+			path = Base.lproj;
 			sourceTree = "<group>";
 		};
 		AF0B065D117CD4BD09DAD1D5 /* Frameworks */ = {
@@ -202,6 +290,7 @@
 					95B2340D1E54DBC200E16FFC = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = JCRFV5ZL52;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -231,7 +320,6 @@
 			files = (
 				9554744F1E66A771001C4283 /* profile_details.png in Resources */,
 				95EE42611E54DD180050DC58 /* Main.storyboard in Resources */,
-				95EE42671E54DD180050DC58 /* Info.plist in Resources */,
 				95EE42601E54DD180050DC58 /* LaunchScreen.storyboard in Resources */,
 				9582EFF51E54DE5100533562 /* Images.xcassets in Resources */,
 				95EE42641E54DD180050DC58 /* CellView.xib in Resources */,
@@ -295,17 +383,23 @@
 			files = (
 				95EE426E1E54DD180050DC58 /* ProjectsViewController.swift in Sources */,
 				95EE42621E54DD180050DC58 /* CalenderViewController.swift in Sources */,
+				95518C171E8579F200EB445A /* iCarousel.m in Sources */,
 				95EE426D1E54DD180050DC58 /* ProjectsTableViewCell.swift in Sources */,
+				95518C231E85916E00EB445A /* CustomTextField.swift in Sources */,
 				95EE42691E54DD180050DC58 /* ProfileTableViewCell.swift in Sources */,
 				95EE42711E54DD180050DC58 /* UsersTableViewCell.swift in Sources */,
 				95EE42721E54DD180050DC58 /* UsersViewController.swift in Sources */,
+				95B36BF11E8139F000CE16BC /* Constants.swift in Sources */,
+				95C962BE1E6B5BF500F882E2 /* CreateCalenderEventViewController.swift in Sources */,
 				95EE42651E54DD180050DC58 /* CompletedWorkViewController.swift in Sources */,
 				95EE422F1E54DD180050DC58 /* AppDelegate.swift in Sources */,
 				95EE42741E54DD180050DC58 /* WorkProjectTableViewCell.swift in Sources */,
 				95EE42751E54DD180050DC58 /* WorkProjectViewController.swift in Sources */,
 				95EE42681E54DD180050DC58 /* OtherMemberProfileViewController.swift in Sources */,
 				953D98DB1E65759D005F0854 /* CalenderTableViewCell.swift in Sources */,
-				95EE42731E54DD180050DC58 /* ViewController.swift in Sources */,
+				956845071E75B84D009CC2DA /* CreateProjectViewController.swift in Sources */,
+				95EE42731E54DD180050DC58 /* LoginViewController.swift in Sources */,
+				9575CD991E75028200A48B79 /* Reachability.swift in Sources */,
 				95EE42661E54DD180050DC58 /* CreateWorkViewController.swift in Sources */,
 				95EE42701E54DD180050DC58 /* SignUpViewController.swift in Sources */,
 				95EE426B1E54DD180050DC58 /* ProjectInformationTableViewCell.swift in Sources */,
@@ -313,6 +407,7 @@
 				95EE426F1E54DD180050DC58 /* SettingsViewController.swift in Sources */,
 				95EE42631E54DD180050DC58 /* CellView.swift in Sources */,
 				95EE426C1E54DD180050DC58 /* ProjectInformationViewController.swift in Sources */,
+				95965F5E1E86DC7B00540E32 /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,14 +521,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0034537271EE89B91594843A /* Pods-IEEE.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JCRFV5ZL52;
 				INFOPLIST_FILE = IEEE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skyblue.IEEE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IEEE/IEEE-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -441,14 +543,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 818D0D276CDE69E160D73D13 /* Pods-IEEE.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JCRFV5ZL52;
 				INFOPLIST_FILE = IEEE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skyblue.IEEE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IEEE/IEEE-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

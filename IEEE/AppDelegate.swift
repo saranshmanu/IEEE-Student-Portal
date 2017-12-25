@@ -24,9 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().isTranslucent = false
         UITabBar.appearance().barTintColor = UIColor(colorWithHexValue: 0x2E4960)
         UITabBar.appearance().tintColor = UIColor.white
+        
         UINavigationBar.appearance().isTranslucent = true
         UINavigationBar.appearance().barTintColor = UIColor(colorWithHexValue: 0x2E4960)
-        UINavigationBar.appearance().tintColor = UIColor.white        
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         return true
     }
     

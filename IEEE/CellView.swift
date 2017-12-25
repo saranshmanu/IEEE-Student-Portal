@@ -11,6 +11,8 @@ class CellView: JTAppleDayCellView {
 
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var selectedView: UIView!
+    @IBOutlet weak var eventsOnTheDayView: UIView!
+    @IBOutlet weak var todayView: UIView!
 
     /*
     // Only override draw() if you perform custom drawing.

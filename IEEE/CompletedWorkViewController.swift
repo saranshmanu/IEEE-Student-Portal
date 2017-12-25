@@ -16,45 +16,62 @@ class CompletedWorkViewController: UIViewController,UITableViewDataSource,UITabl
     @IBOutlet weak var completedWorkTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //navigation bar edit
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white,NSFontAttributeName : UIFont(name : "Avenir Next", size: 21)!]
         //refresh control
         refreshControl=UIRefreshControl()
         refreshControl.backgroundColor = UIColor.black
         refreshControl.tintColor = UIColor.white
         refreshControl.attributedTitle = NSAttributedString(string :"Pull to refresh" )
         refreshControl.addTarget(self, action: #selector(WorkProjectViewController.refresh), for: UIControlEvents.valueChanged)
+        refreshControl.isEnabled = false
         completedWorkTable.addSubview(refreshControl)
         // Do any additional setup after loading the view.
         Alamofire.request("https://ieeevitportal.herokuapp.com/work/voluntary",method:.get, headers: ["x-access-token":token]).responseJSON {response in
-            let swiftyJsonVar = JSON(response.result.value!)
-            let number=swiftyJsonVar["work"].count
-            print(number)
-            for i in 0...number-1{
-                if(String(describing: swiftyJsonVar["work"][i]["status"])=="verified"){
-                    self.workDetailsCompleted.append([String(describing: swiftyJsonVar["work"][i]["title"]),String(describing: swiftyJsonVar["work"][i]["desc"]),String(describing: swiftyJsonVar["work"][i]["allotted_by"]["name"]),String(describing: swiftyJsonVar["work"][i]["status"]),String(describing: swiftyJsonVar["work"][i]["due"]),String(describing: swiftyJsonVar["work"][i]["created"]),String(describing: swiftyJsonVar["work"][i]["_id"])])
+            
+            if response.result.isSuccess {
+                let swiftyJsonVar = JSON(response.result.value!)
+                let number=swiftyJsonVar["work"].count
+                print(number)
+                if number != 0 {
+                    for i in 0...number-1{
+                        if(String(describing: swiftyJsonVar["work"][i]["status"])=="verified"){
+                            self.workDetailsCompleted.append([String(describing: swiftyJsonVar["work"][i]["title"]),String(describing: swiftyJsonVar["work"][i]["desc"]),String(describing: swiftyJsonVar["work"][i]["allotted_by"]["name"]),String(describing: swiftyJsonVar["work"][i]["status"]),String(describing: swiftyJsonVar["work"][i]["due"]),String(describing: swiftyJsonVar["work"][i]["created"]),String(describing: swiftyJsonVar["work"][i]["_id"])])
+                        }
+                        self.completedWorkTable.reloadData()
+                    }
                 }
+                print(self.workDetailsCompleted)
             }
-            print(self.workDetailsCompleted)
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-                self.completedWorkTable.reloadData()
-            }
+                
+            
         }
+        refreshControl.isEnabled = true
     }
     func refresh(){
         //for deleting all data int the arrays
         workDetailsCompleted.removeAll()
         //for fetching JSON request
         Alamofire.request("https://ieeevitportal.herokuapp.com/work/voluntary",method:.get, headers: ["x-access-token":token]).responseJSON {response in
-            let swiftyJsonVar = JSON(response.result.value!)
-            let number=swiftyJsonVar["work"].count
-            print(number)
-            for i in 0...number-1{
-                if(String(describing: swiftyJsonVar["work"][i]["status"])=="verified"){
-                    self.workDetailsCompleted.append([String(describing: swiftyJsonVar["work"][i]["title"]),String(describing: swiftyJsonVar["work"][i]["desc"]),String(describing: swiftyJsonVar["work"][i]["allotted_by"]["name"]),String(describing: swiftyJsonVar["work"][i]["status"]),String(describing: swiftyJsonVar["work"][i]["due"]),String(describing: swiftyJsonVar["work"][i]["created"]),String(describing: swiftyJsonVar["work"][i]["_id"])])
+            
+            if response.result.isSuccess {
+                let swiftyJsonVar = JSON(response.result.value!)
+                let number=swiftyJsonVar["work"].count
+                print(number)
+                if number != 0{
+                    for i in 0...number-1{
+                        if(String(describing: swiftyJsonVar["work"][i]["status"])=="verified"){
+                            self.workDetailsCompleted.append([String(describing: swiftyJsonVar["work"][i]["title"]),String(describing: swiftyJsonVar["work"][i]["desc"]),String(describing: swiftyJsonVar["work"][i]["allotted_by"]["name"]),String(describing: swiftyJsonVar["work"][i]["status"]),String(describing: swiftyJsonVar["work"][i]["due"]),String(describing: swiftyJsonVar["work"][i]["created"]),String(describing: swiftyJsonVar["work"][i]["_id"])])
+                        }
+                        self.completedWorkTable.reloadData()
+                    }
                 }
             }
         }
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-            self.completedWorkTable.reloadData()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+            //self.completedWorkTable.reloadData()
             self.refreshControl.endRefreshing()
         }
     }

@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+
 class CreateWorkViewController: UIViewController,UITextFieldDelegate {
     var counter = 1
     @IBOutlet weak var workTitle: UITextField!
@@ -16,17 +17,33 @@ class CreateWorkViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var workDateAndTime: UIDatePicker!
     @IBOutlet weak var workYear: UIButton!
     @IBOutlet weak var Post: UIButton!
-    
-    @IBAction func GoBackFromCreateWork(_ sender: Any) {
-        //Go to the HomeViewController if the login is sucessful
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
-        self.present(vc!, animated: true, completion: nil)
+    @IBOutlet weak var year: UIButton!
+    @IBOutlet weak var generateButton: UIButton!
+
+    // for hitting return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        workTitle.resignFirstResponder()
+        workDescription.resignFirstResponder()
+        return true
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(CreateWorkViewController.dismissKeyboard)))
+        //to make the button round
+        year.layer.cornerRadius =  10
+        generateButton.layer.cornerRadius =  10
         
+        //navigation bar edit
+        self.title = "Add Work"
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        //self.navigationController?.navigationBar.backgroundColor = dark_blue
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white,NSFontAttributeName : UIFont(name : "Avenir Next", size: 21)]
+        
+        //to dismiss keyboard
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(CreateWorkViewController.dismissKeyboard)))
+
         workYear.setTitle(String(counter)+" year",for: .normal)
     }
     func dismissKeyboard() {
@@ -45,6 +62,8 @@ class CreateWorkViewController: UIViewController,UITextFieldDelegate {
     }
     @IBAction func Post(_ sender: Any)
     {
+        workYear.isEnabled = false
+        generateButton.isEnabled = false
         //to change the format of the date into ISO8601 format
         let dateFormatter = DateFormatter()
         let enUSPosixLocale = NSLocale(localeIdentifier: "en_US_POSIX")
@@ -61,12 +80,16 @@ class CreateWorkViewController: UIViewController,UITextFieldDelegate {
                     print(swiftyJsonVar)
                     if swiftyJsonVar["code"]=="1"
                     {
+                        self.workYear.isEnabled = true
+                        self.generateButton.isEnabled = true
                         let alertController = UIAlertController(title: "Error", message: "You are not authorised to generate the task", preferredStyle: .alert)
                         let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                         alertController.addAction(defaultAction)
                         self.present(alertController, animated: true, completion: nil)
                     }
                     else{
+                        self.workYear.isEnabled = true
+                        self.generateButton.isEnabled = true
                         //Go to the HomeViewController if the task generation is sucessful
                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
                         self.present(vc!, animated: true, completion: nil)
@@ -74,12 +97,12 @@ class CreateWorkViewController: UIViewController,UITextFieldDelegate {
                         let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                         alertController.addAction(defaultAction)
                         self.present(alertController, animated: true, completion: nil)
-                        
-
                     }
                 }
             }
         else{
+                self.workYear.isEnabled = true
+                self.generateButton.isEnabled = true
                 let alertController = UIAlertController(title: "Error", message: "Fields are empty", preferredStyle: .alert)
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 alertController.addAction(defaultAction)
